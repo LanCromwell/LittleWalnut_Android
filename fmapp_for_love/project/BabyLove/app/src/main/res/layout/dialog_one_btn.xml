@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_confirm_top_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:minHeight="97dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+
+        <cn.baby.love.common.view.button.QMUIRoundButton
+            android:id="@+id/positive_button"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/QMUIRoundButton"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:text="确定"
+            android:textSize="16dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

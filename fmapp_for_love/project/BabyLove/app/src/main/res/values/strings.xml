@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">小核桃祖父母育婴日历</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="net_error">网络异常，请检查网络!</string>
+    <string name="login_fail">登录失败，请稍后重试!</string>
+    <string name="virify_code_get_fail">验证码获取失败，请稍后重试!</string>
+    <string name="get_verify_code_fail">获取验证码失败!</string>
+    <string name="loading">正在加载</string>
+    <string name="bindingfail">绑定失败，请稍后重试!</string>
+    <string name="feedback_hint">请留下微信号以及你的意见，可以让我们提供更好的服务，意见如被采纳我们将提供小红包奖励</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="no_content">暂无相关内容</string>
+    <string name="cancel">取消</string>
+    <string name="load_fail_try_again">加载失败，请稍后重试!</string>
+    <string name="your_feedback_success">您的反馈已成功，我们会尽快联系您</string>
+    <string name="ok">确定</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="commit_fail">提交失败，请稍后重试!</string>
+    <string name="has_collect">已收藏</string>
+    <string name="share_data_load_fail">分享数据加载失败</string>
+    <string name="share_error">分享失败</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_info_get_fail">分享信息获取失败，请重试！</string>
+    <string name="this_day_no_audio">当天没有音频</string>
+    <string name="play_error">播放错误</string>
+    <string name="register">注册</string>
+    <string name="input_verifycode">请输入验证码</string>
+    <string name="phone_fomat_error">手机号码格式不正确</string>
+    <string name="commit">提交</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_fuwu_yinsi">用户服务协议和隐私政策</string>
+</resources>

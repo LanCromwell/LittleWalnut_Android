@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- QMUI - Begin -->
+    <!-- activity或fragment切换的动画时间 -->
+    <integer name="qmui_anim_duration">300</integer>
+    <!-- QMUI - End -->
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toady_bg"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.baby.love.common.view.JmRecyclerView
+
+            android:id="@+id/mJmRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_calender"
+                    android:orientation="vertical">
+
+                    <com.haibin.calendarview.CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#fff"
+                        app:calendar_height="50dp"
+                        app:calendar_padding="5dp"
+                        app:current_day_lunar_text_color="@color/white"
+                        app:current_day_text_color="@color/white"
+                        app:current_month_lunar_text_color="@color/gray_666"
+                        app:current_month_text_color="@color/black333"
+                        app:max_year="2020"
+                        app:min_year="2004"
+                        app:month_view="cn.baby.love.common.view.calendar.CustomMonthView"
+                        app:month_view_show_mode="mode_only_current"
+                        app:other_month_lunar_text_color="@color/black333"
+                        app:other_month_text_color="#e1e1e1"
+                        app:scheme_text=""
+                        app:scheme_text_color="#333"
+                        app:scheme_theme_color="#128c4b"
+                        app:selected_lunar_text_color="@color/black333"
+                        app:selected_text_color="@color/black333"
+                        app:selected_theme_color="#00046cea"
+                        app:week_background="#fff"
+                        app:week_bar_height="20dp"
+                        app:week_start_with="sun"
+                        app:week_text_color="@color/gray_999"
+                        app:year_view_day_text_color="#333333"
+                        app:year_view_day_text_size="9sp"
+                        app:year_view_month_text_color="#ff0000"
+                        app:year_view_month_text_size="20sp"
+                        app:year_view_scheme_color="#f17706" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_yiting"
+                            android:gravity="center_vertical"
+                            android:text=" 已听"
+                            android:textColor="@color/gray_999"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:drawableLeft="@drawable/icon_weiting"
+                            android:gravity="center_vertical"
+                            android:text=" 未听"
+                            android:textColor="@color/gray_999"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:drawableLeft="@drawable/icon_jintian"
+                            android:gravity="center_vertical"
+                            android:text=" 今天"
+                            android:textColor="@color/gray_999"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/babyAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <SeekBar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:maxHeight="2.0dip"
+                            android:minHeight="2.0dip"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/seekbar_style" />
+
+                        <TextView
+                            android:id="@+id/curSeekTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seekBar"
+                            android:layout_alignLeft="@id/seekBar"
+                            android:layout_marginLeft="10dp"
+                            android:text="00:00"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/totalSeekTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seekBar"
+                            android:layout_alignRight="@id/seekBar"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:text="00:00"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/bottomLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/bottomLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center_vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/historyBtnLy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp">
+                                <ImageView
+                                    android:id="@+id/historyBtn"
+                                    android:layout_width="22dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/icon_history"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/historyBtn"
+                                    android:textColor="@color/white"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="10sp"
+                                    android:text="历史提醒"/>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/docBtnLy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp">
+                                <ImageView
+                                    android:id="@+id/docBtn"
+                                    android:layout_width="19dp"
+                                    android:layout_height="22dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/icon_doc"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/docBtn"
+                                    android:textColor="@color/white"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="10sp"
+                                    android:text="文稿"/>
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/playBtn"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/icon_no_play" />
+
+                            <ImageView
+                                android:id="@+id/likeBtn"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="40dp"
+                                android:layout_toLeftOf="@id/playBtn"
+                                android:background="@drawable/icon_like_no" />
+
+                            <ImageView
+                                android:id="@+id/shareBtn"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="40dp"
+                                android:layout_toRightOf="@id/playBtn"
+                                android:background="@drawable/icon_share" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

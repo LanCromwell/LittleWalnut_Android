@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <CheckBox
+        android:id="@+id/cb_mama"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/selector_icon_mama"
+        android:button="@null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是准妈/妈妈"
+        android:textColor="@color/gray_999"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/cb_baba"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/selector_icon_baba"
+        android:button="@null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是准爸/爸爸"
+        android:textColor="@color/gray_999"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/cb_zufumu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:button="@null"
+        android:text="我是祖父母"
+        android:textColor="@drawable/selector_zufumu_colors"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal|bottom"
+        android:text="完善以上信息，获取更多精准内容"
+        android:textColor="@color/gray_999"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+Android UI框架1
+https://www.cnblogs.com/hwb04160011/p/7027317.html
+
+Android UI框架2
+https://www.jianshu.com/p/07587fc17f11
+
+Android UI框架3
+https://blog.csdn.net/m0_37135879/article/details/79159615
+
+Android 富文本处理器
+https://github.com/zzhoujay/RichText
+
+升级模块
+https://gitee.com/hyhyhykw/CheckVersionLib
+
+网络模块
+https://github.com/jeasonlzy/okhttp-OkGo
+
+下拉刷新
+https://github.com/scwang90/SmartRefreshLayout
+
+qmui
+https://qmuiteam.com/android/
+
+底部导航控件
+https://github.com/forvv231/EasyNavigition
+https://www.jianshu.com/p/ce8e09cda486

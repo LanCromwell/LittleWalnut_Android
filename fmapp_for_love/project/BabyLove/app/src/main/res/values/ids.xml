@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- QMUI - Begin -->
+    <item name="qmuidemo" type="id"/>
+    <item name="main_container" type="id"/>
+
+    <item name="empty_button" type="id"/>
+
+    <item name="topbar_right_about_button" type="id"/>
+    <item name="topbar_right_change_button" type="id"/>
+
+    <item name="layout_for_test" type="id"/>
+    <item name="title_left_icon" type="id"/>
+    <item name="title_right_icon" type="id"/>
+
+    <item name="qmui_arch_swipe_layout_in_back" type="id"/>
+    <!-- QMUI - End -->
+</resources>

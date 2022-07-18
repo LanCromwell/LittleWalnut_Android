@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="cn.baby.love.activity.mine.FeedBackActivity">
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_feedback_input"
+            android:gravity="left|top"
+            android:hint="@string/feedback_hint"
+            android:lines="10"
+            android:padding="15dp"
+            android:textColor="@color/black333"
+            android:textColorHint="@color/gray_999"
+            android:textCursorDrawable="@drawable/input_curse_shape"
+            android:textSize="14sp" />
+
+        <cn.baby.love.common.view.button.QMUIRoundButton
+            android:id="@+id/commitBtn"
+            style="@style/QMUIRoundButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:text="提交"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_feedback_bottom_layout"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/Iconerweima"
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:background="@drawable/icon_erweima" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="如想加入专家陪读的读书会为孩子获得更多优质教育资源,请添加我们的发起人进行交流"
+                            android:textColor="@color/gray_999"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/weixinTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:lineSpacingExtra="3dp"
+                            android:text="微信:mmcan01\nQQ:531639586进行交流"
+                            android:textColor="@color/gray_999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="提示：由于微信对加人有限制，可能会出现老师收不到好友请求的情况，如果在24小时内老师还未通过好友申请，你可以隔天再发一次"
+                    android:textColor="@color/gray_999"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_confirm_top_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_fuwu_yinsi"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"
+            android:textColor="#313131"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:scrollbars="vertical"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="18dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/positive_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_confirm_bottom_style"
+                android:gravity="center"
+                android:text="同意并开始使用"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/negative_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_confirm_bottom_left_style"
+                android:gravity="center"
+                android:text="不同意并退出"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#9C9C9C"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
